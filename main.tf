@@ -6,6 +6,14 @@ terraform {
     }
   }
 
+  cloud {
+    organization = "deop-maya"
+
+    workspaces {
+      name = "OgrenmeWorkspace"
+    }
+  }
+
   required_version = ">= 1.1.0"
 }
 
